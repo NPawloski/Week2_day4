@@ -8,7 +8,22 @@ namespace Week2_day4
 {
     class Cat
     {
+        //STATES
+        //FIELDS
+        private string name;
 
+
+        //Properties
+
+
+
+        //BEHAVIORS
+
+        //CONTRUCTORS
+        public Cat()
+        {
+            //default constructor,takes no paramaters
+        }
 
     }
 }
