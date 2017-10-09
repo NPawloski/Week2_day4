@@ -11,6 +11,10 @@ namespace Week2_day4
         //STATES
         //FIELDS
         private string name;
+        private int age;
+        private String furColor;
+        private bool isHungary = true;
+
 
 
         //Properties
@@ -30,5 +34,34 @@ namespace Week2_day4
             //default constructor,takes no paramaters
         }
 
+        public Cat(int age)
+        {
+            this.age = age;
+        }
+
+        public Cat(String name,int age,String furColor)
+        {
+            this.name = name;
+            this.age = age;
+            this.furColor = furColor;
+        }
+
+        public void eat()
+        {
+            if (isHungary == true)
+            {
+                isHungary = false;
+            }
+            Console.WriteLine("Is the cat hungary? " + isHungary);
+        }
+
+        public void WorkOut()
+        {
+            if (isHungary == false)
+            {
+                isHungary = true;
+            }
+            Console.WriteLine("The cat worked out. Hungary now? "+ isHungary);
+        }
     }
 }

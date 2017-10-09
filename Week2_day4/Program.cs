@@ -23,9 +23,15 @@ namespace Week2_day4
             //    Console.Write(rollResult + " ");
             //}
 
-            Cat mittens = new Cat();
+            Cat mittens = new Cat("Mittens",3,"black");
 
-            mittens.Name = "Mittens";
+            Cat secondCat = new Cat("Oz", 2, "Orange and white");
+
+            //mittens.Name = "Mittens";
+
+            mittens.eat();
+
+            mittens.WorkOut();
 
 
 
