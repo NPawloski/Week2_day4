@@ -14,7 +14,12 @@ namespace Week2_day4
 
 
         //Properties
+        public string Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
 
+        }
 
 
         //BEHAVIORS
