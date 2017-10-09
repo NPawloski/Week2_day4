@@ -12,7 +12,7 @@ namespace Week2_day4
         private string furLength;
         private float height;
         private string runSpeed;
-        private int weight;
+        private double weight;
 
         //paramaters
         public String FurLength
@@ -21,7 +21,7 @@ namespace Week2_day4
             set { this.furLength = value; }
         }
 
-        public int Weight
+        public double Weight
         {
             get { return this.weight; }
             set { this.weight = value; }
@@ -48,13 +48,13 @@ namespace Week2_day4
 
         //overloaded constructor
 
-            public Dog(string furLength, float height)
+        public Dog(string furLength, float height)
         {
             this.furLength = furLength;
             this.height = height;
         }
 
-        public Dog(string furLength, float height, string runSpeed,int weight)
+        public Dog(string furLength, float height, string runSpeed, double weight)
         {
             this.height = height;
             this.furLength = furLength;
@@ -62,5 +62,25 @@ namespace Week2_day4
             this.weight = weight;
         }
 
+        public void Run()
+        {
+            runSpeed = "GEtting faster.";
+            weight--;
+        }
+
+        public void bark()
+        {
+            Console.WriteLine("\a");
+        }
+
+        public void Potty()
+        {
+            weight -= 0.5;
+        }
+
+        public void Groom()
+        {
+            furLength = "all cleaned up.";
+        }
     }
 }
